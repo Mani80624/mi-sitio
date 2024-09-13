@@ -16,6 +16,7 @@ if($resultado){
     $_SESSION['name'] = $resultado['name'];
     header('Location: /octopus/principal/dashboard.php');
 }else{
+    $_SESSION['error'] = "El usuario o contraseña son incorrectos";
     header('Location: /');
 }
 

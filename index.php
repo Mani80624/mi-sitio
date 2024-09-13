@@ -76,6 +76,12 @@
 									</span>
 								</div>
 							</div>
+							<?php if(isset($_SESSION['error'])):?>
+								<div class="alert alert-danger">
+										<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+										<?=$_SESSION['error'];?>
+								</div>
+							<?php endif;?>
 
 							<div class="row">
 								<div class="col-sm-8">
