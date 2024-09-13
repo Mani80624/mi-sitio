@@ -130,6 +130,6 @@
 		
 		<!-- Theme Initialization Files -->
 		<script src="octopus/assets/javascripts/theme.init.js"></script>
+	</body>
 
-	</body><img src="http://www.ten28.com/fref.jpg">
 </html>
