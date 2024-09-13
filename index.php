@@ -1,4 +1,4 @@
-<?php session_start() ?>
+<?php session_start()?>
 <!doctype html>
 <html class="fixed">
 	<head>
@@ -108,6 +108,7 @@
 				<p class="text-center text-muted mt-md mb-md">&copy; Copyright 2024. All rights reserved. Template by <a href="https://colorlib.com">ManuelDC</a>.</p>
 			</div>
 		</section>
+		<h1><?= $_SESSION['name']?></h1>
 		<!-- end: page -->
 
 		<!-- Vendor -->
