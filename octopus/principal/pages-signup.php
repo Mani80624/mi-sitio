@@ -39,12 +39,12 @@
 		<section class="body-sign">
 			<div class="center-sign">
 				<a href="/" class="logo pull-left">
-					<img src="/octopus/assets/images/logo.png" height="54" alt="Porto Admin" />
+					<h1>Matemáticas delta</h1>
 				</a>
 
 				<div class="panel panel-sign">
 					<div class="panel-title-sign mt-xl text-right">
-						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Sign Up</h2>
+						<h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> Registrate</h2>
 					</div>
 					<div class="panel-body">
 						<form action="/octopus/principal/php/registro.php" method="POST" id="formulario">
@@ -69,6 +69,14 @@
 										<input name="pwd_confirm" id="pwd_confirm" type="password" class="form-control input-lg" />
 									</div>
 								</div>
+							</div>
+
+							<div class="form-group mb-lg">
+								<label>Rol</label>
+								<select name="roles" id="roles">
+									<option value="Alumno">Alumno</option>
+									<option value="Administrador">Administrador</option>
+								</select>
 							</div>
 
 							<div class="row">

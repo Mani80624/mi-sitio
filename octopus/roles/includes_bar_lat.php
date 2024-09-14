@@ -15,7 +15,7 @@
 						<nav id="menu" class="nav-main" role="navigation">
 							<ul class="nav nav-main">
 								<li class="nav-active">
-									<a href="index.html">
+									<a href="/octopus/roles/dashboard.php">
 										<i class="fa fa-home" aria-hidden="true"></i>
 										<span>Dashboard</span>
 									</a>

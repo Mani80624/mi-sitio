@@ -193,8 +193,8 @@
 								<img src="assets/images/!logged-user.jpg" alt="Joseph Doe" class="img-circle" data-lock-picture="assets/images/!logged-user.jpg" />
 							</figure>
 							<div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
-								<span class="name"><?= $_SESSION['name']?></span>
-								<span class="role">administrator</span>
+								<span class="name"><?= ucwords($_SESSION['name'])?></span>
+								<span class="role"><?= ucwords($_SESSION['rol'])?></span>
 							</div>
 			
 							<i class="fa custom-caret"></i>
@@ -204,13 +204,13 @@
 							<ul class="list-unstyled">
 								<li class="divider"></li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="pages-user-profile.html"><i class="fa fa-user"></i> My Profile</a>
+									<a role="menuitem" tabindex="-1" href="/octopus/roles/user_profile.php"><i class="fa fa-user"></i> My Profile</a>
 								</li>
 								<li>
 									<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
 								</li>
 								<li>
-									<a role="menuitem" tabindex="-1" href="php/logout.php"><i class="fa fa-power-off"></i> Logout</a>
+									<a role="menuitem" tabindex="-1" href="/octopus/principal/php/logout.php"><i class="fa fa-power-off"></i> Logout</a>
 								</li>
 							</ul>
 						</div>

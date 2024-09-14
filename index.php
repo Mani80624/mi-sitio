@@ -33,14 +33,24 @@
 
 		<!-- Head Libs -->
 		<script src="octopus/assets/vendor/modernizr/modernizr.js"></script>
+		<!-- Custom Styles -->
+		<link rel="stylesheet" href="/octopus/principal/css/styles.css">
 
 	</head>
 	<body>
+		<div id="alert-create">
+			<?php if(isset($_SESSION['create'])):?>
+				<div class="alert alert-success">
+					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+					<strong><?php echo $_SESSION['create'];?></strong>
+				</div>
+			<?php endif?>
+		</div>
 		<!-- start: page -->
 		<section class="body-sign">
 			<div class="center-sign">
 				<a href="/" class="logo pull-left">
-					<h1>Bienvenido de nuevo</h1>
+					<h1>Matemáticas delta</h1>
 					<!--<img src="octopus/assets/images/logo.png" height="54" alt="Porto Admin" />-->
 				</a>
 

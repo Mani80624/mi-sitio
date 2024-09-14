@@ -14,7 +14,9 @@ $resultado = $mysqli->query("SELECT * FROM `users` WHERE email='{$user}' and pas
 
 if($resultado){
     $_SESSION['name'] = $resultado['name'];
-    header('Location: /octopus/principal/dashboard.php');
+    $_SESSION['rol'] = $resultado['rol'];
+    $_SESSION['user_id'] = $resultado['id'];
+    header('Location: /octopus/roles/dashboard.php');
 }else{
     $_SESSION['error'] = "El usuario o contraseña son incorrectos";
     header('Location: /');

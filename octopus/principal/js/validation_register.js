@@ -59,4 +59,39 @@ $(document).ready(function(){
             }
         }
     });
+
+    $("#formUpdate").validate({
+        rules:{
+            first_name:{
+                required:true
+            },
+            last_name:{
+                required:true
+            },
+            pwd:{
+                required:true,
+                minlength:8
+            },
+            pwd_confirm:{
+                required:true,
+                equalTo:"#profileNewPassword"
+            }
+        },
+        messages:{
+            first_name:{
+                required:"Por favor ingrese un nombre"
+            },
+            last_name:{
+                required:"Por favor ingrese sus apellidos"
+            },
+            pwd:{
+                required:"Por favor ingrese una contraseña",
+                minlength:"Ingresa una contraseña de almenos 8 caracteres"
+            },
+            pwd_confirm:{
+                required:"Por favor ingrese una contraseña",
+                equalTo:"Las contraseñas no coinciden"
+            }
+        }
+    });
 });

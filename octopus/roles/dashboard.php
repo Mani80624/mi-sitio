@@ -382,7 +382,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 
 											<div class="widget-profile-info">
 												<div class="profile-picture">
-													<img src="assets/images/!logged-user.jpg">
+													<img src="/octopus/assets/images/!logged-user.jpg">
 												</div>
 												<div class="profile-info">
 													<h4 class="name text-semibold">John Doe</h4>
@@ -828,6 +828,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<script src="/octopus/assets/vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 		<script src="/octopus/assets/vendor/magnific-popup/magnific-popup.js"></script>
 		<script src="/octopus/assets/vendor/jquery-placeholder/jquery.placeholder.js"></script>
+		
 		
 		<!-- Specific Page Vendor -->
 		<script src="/octopus/assets/vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js"></script>

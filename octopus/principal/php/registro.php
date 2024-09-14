@@ -1,5 +1,6 @@
 <?php 
 use mysqli;
+session_start();
 $mysqli = new mysqli('localhost','root','','octopus');
 
 if($mysqli->connect_error){
@@ -8,7 +9,9 @@ if($mysqli->connect_error){
 $name = $_POST['name'];
 $email = $_POST['email'];
 $pwd = $_POST['pwd'];
+$rol = $_POST['roles'];
 
-$mysqli->query("INSERT INTO `users` (name,email,pass) VALUES ('{$name}','{$email}','{$pwd}')");
+$mysqli->query("INSERT INTO `users` (name,email,pass,rol) VALUES ('{$name}','{$email}','{$pwd}','{$rol}')");
+$_SESSION['create'] = "Se ha creado la cuenta";
 header('Location: /');
 ?>
