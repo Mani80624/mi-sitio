@@ -16,7 +16,12 @@ if($resultado){
     $_SESSION['name'] = $resultado['name'];
     $_SESSION['rol'] = $resultado['rol'];
     $_SESSION['user_id'] = $resultado['id'];
-    header('Location: /octopus/roles/dashboard.php');
+    $_SESSION['email'] = $resultado['email'];
+    if(strtolower($_SESSION['rol'])=='administrador'){
+        header('Location: /octopus/roles/administrador/dashboard.php');
+    }else{
+        header('Location: /octopus/roles/alumno/dashboard.php');
+    }
 }else{
     $_SESSION['error'] = "El usuario o contraseña son incorrectos";
     header('Location: /');

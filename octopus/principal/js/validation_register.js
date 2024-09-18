@@ -68,6 +68,10 @@ $(document).ready(function(){
             last_name:{
                 required:true
             },
+            email:{
+                required:true,
+                email:true
+            },
             pwd:{
                 required:true,
                 minlength:8
@@ -83,6 +87,10 @@ $(document).ready(function(){
             },
             last_name:{
                 required:"Por favor ingrese sus apellidos"
+            },
+            email:{
+                required:"Por favor ingrese un correo electrónico",
+                email: "Ingrese el formato correcto"
             },
             pwd:{
                 required:"Por favor ingrese una contraseña",

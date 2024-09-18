@@ -7,7 +7,7 @@ if($mysqli->connect_error){
     die('Error de conexion'.$mysqli->connect_error);
 }
 $name = $_POST['name'];
-$email = $_POST['email'];
+$email = strtolower($_POST['email']);
 $pwd = $_POST['pwd'];
 $rol = $_POST['roles'];
 
