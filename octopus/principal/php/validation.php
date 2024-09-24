@@ -27,5 +27,6 @@ if($resultado){
     header('Location: /');
 }
 
+$mysqli->close();
 
 ?>

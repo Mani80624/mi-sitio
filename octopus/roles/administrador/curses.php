@@ -39,6 +39,9 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="/octopus/assets/stylesheets/theme-custom.css">
 
+		<!-- Custom css -->
+		<link rel="stylesheet" href="/octopus/roles/administrador/css/styles.css">
+
 		<!-- Head Libs -->
 		<script src="/octopus/assets/vendor/modernizr/modernizr.js"></script>
 </head>
@@ -47,72 +50,93 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<!-- start: header -->
 			<?php include 'includes_header.php'; ?> 
 		<!-- end: header -->
-      <div class="inner-wrapper">
+    <div class="inner-wrapper">
         <?php include 'includes_bar_lat.php';?>
         <section role="main" class="content-body">
           <div class="row">
-            <div class="col-md-6"></div>
+
+		  	<!-- etiqueta de creación -->
+			 <div id="success">
+
+			 </div>
+
+
+            <div class="col-md-6">
+
+			</div>
             <section class="panel">
-									<header class="panel-heading">
-										<div class="panel-actions">
-											<a href="#" class="fa fa-caret-down"></a>
-											<a href="#" class="fa fa-times"></a>
-										</div>
+				<header class="panel-heading">
+					<div class="panel-actions">
+						<a href="#" class="fa fa-caret-down"></a>
+						<a href="#" class="fa fa-times"></a>
+					</div>
 						
-										<h2 class="panel-title">Mis cursos</h2>
-									</header>
-									<div class="panel-body">
-										<div class="table-responsive">
-											<table class="table mb-none">
-												<thead>
-													<tr>
-														<th>#</th>
-														<th>Nombre del curso</th>
-														<th>Horas del curso</th>
-														<th>Descripción del curso</th>
-														<th>editar/borrar</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>1</td>
-														<td>Mark</td>
-														<td>Otto</td>
-														<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, inventore? Minus consequatur voluptatum quasi similique eos nulla sequi, mollitia facilis ullam voluptatibus aut illo obcaecati provident adipisci fuga reiciendis dicta.</td>
-														<td class="actions-hover">
-															<a href=""><i class="fa fa-pencil"></i></a>
-															<a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>2</td>
-														<td>Jacob</td>
-														<td>Thornton</td>
-														<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium cupiditate, cum quasi temporibus earum asperiores aliquid placeat reiciendis ipsa quia quis voluptatibus? Adipisci, magnam minus eligendi quas obcaecati provident recusandae!</td>
-														<td class="actions-hover">
-															<a href=""><i class="fa fa-pencil"></i></a>
-															<a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
-														</td>
-													</tr>
-													<tr>
-														<td>3</td>
-														<td>Larry</td>
-														<td>the Bird</td>
-														<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi aliquid sapiente, et beatae est voluptates perspiciatis autem quisquam repellat iste provident itaque ut suscipit sit, architecto voluptas minima neque perferendis!</td>
-														<td class="actions-hover">
-															<a href=""><i class="fa fa-pencil"></i></a>
-															<a href="" class="delete-row"><i class="fa fa-trash-o"></i></a>
-														</td>
-													</tr>
-												</tbody>
-											</table>
+					<h2 class="panel-title">Mis cursos</h2>
+				</header>
+				<div class="panel-body">
+					<div class="table-responsive">
+						<table class="table mb-none">
+							<thead>
+								<tr>
+									<th>#</th>
+									<th>Nombre del curso</th>
+									<th>Horas del curso</th>
+									<th>Descripción del curso</th>
+									<th>editar/borrar</th>
+								</tr>
+							</thead>
+							<tbody id="views_courses">
+								
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			
+			<div class="row">
+				<button class="btn btn-primary" id="button-register">Crear nuevo curso</button>
+		  </div>
+		  <div class="row mt-4" id="register-course">
+		  <div class="tabs">
+					<div class="tab-content">
+						<div class="tab">
+							<form id="courses_form" class="form horizontal">
+								<h4 class="mb-xlg">Nuevo curso</h4>
+								<fieldset>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Nombre del curso</label>
+										<div class="col-md-8">
+											<input type="text" name="name_course" id="name_course" class="form-control">
 										</div>
 									</div>
-						<button type="submit" class="btn btn-primary">Crear nuevo curso</button>
-          </div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Horas del curso</label>
+										<div class="col-md-8">
+											<input type="number" name="hours" id="hours" class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-md-3 control-label">Descripción de curso (no más de 250 carácteres)</label>
+										<div class="col-md-8">
+											<input type="text" name="description" id="description" class="form-control">
+										</div>
+									</div>
+								</fieldset>
+								<div class="row">
+									<div class="col-md-9 col-md-offset-3">
+										<button type="submit" class="btn btn-primary">Crear</button>
+										<button type="reset" class="btn btn-primary" id="cancelar-form">Cancelar</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+		  </div>
         </section>
 
-      </div> 
+    </div> 
     </section>
 		<!-- Vendor -->
 		<script src="/octopus/assets/vendor/jquery/jquery.js"></script>
@@ -136,5 +160,9 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		
 		<!-- Theme Initialization Files -->
 		<script src="/octopus/assets/javascripts/theme.init.js"></script>
+
+		<!-- Custom script -->
+		 <script src="/octopus/roles/administrador/js/show_register_courses.js"></script>
+		 <script src="/octopus/roles/administrador/js/table.js"></script>
 </body>
 </html>

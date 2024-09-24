@@ -865,9 +865,12 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		
 		<!-- Theme Initialization Files -->
 		<script src="/octopus/assets/javascripts/theme.init.js"></script>
-
+												
 
 		<!-- Examples -->
 		<script src="/octopus/assets/javascripts/dashboard/examples.dashboard.js"></script>
+
+		<!-- Custom Scritps-->
+		 <script src="/octopus/roles/administrador/js/get_courses.js"></script>
 	</body>
 </html>
