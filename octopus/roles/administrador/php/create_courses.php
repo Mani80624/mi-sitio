@@ -1,12 +1,5 @@
 <?php
-use mysqli;
-session_start();
-
-$mysqli = new mysqli('localhost','root','','octopus');
-
-if($mysqli->connect_error){
-    die('Error de conexion: '.$mysqli->connect_error);
-};
+include 'conecction.php';
 
 $name_course = ucwords($_POST['name_course']);
 

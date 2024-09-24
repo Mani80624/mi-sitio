@@ -28,7 +28,7 @@
 									</a>
 								</li>
 								<li>
-									<a id="cursos">
+									<a id="cursos" href="/octopus/roles/administrador/curses.php">
 										<i class="fa fa-envelope" aria-hidden="true"></i>
 										<span>Cursos</span>
 									</a>

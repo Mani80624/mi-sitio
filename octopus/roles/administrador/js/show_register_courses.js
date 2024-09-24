@@ -31,31 +31,4 @@ $(document).ready(function(){
             }
         }
     });
-
-    $("#courses_form").on('submit',function(event){
-        event.preventDefault();
-
-        let datosFormulario = $(this).serialize();
-
-        $.ajax({
-            url: "/octopus/roles/administrador/php/create_courses.php",
-            type: "POST",
-            data: datosFormulario,
-            success: function(response){
-                $("#success").html(`
-                    <div class="alert alert-success">
-				        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-				        <strong>Se ha creado un nuevo curso ${response}</strong>
-			        </div>`
-                );
-            },
-            error: function(error){
-                $("#success").html(`
-                    <div class="alert alert-danger">
-				        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-				        <strong>Ha ocurrido un error intenta nuevamente</strong>
-			        </div>`);
-            }
-        });
-    });
 });

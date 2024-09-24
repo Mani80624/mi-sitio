@@ -74,8 +74,8 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 					<h2 class="panel-title">Mis cursos</h2>
 				</header>
 				<div class="panel-body">
-					<div class="table-responsive">
-						<table class="table mb-none">
+					<div id="table_async" class="table-responsive">
+						<!--<table class="table mb-none">
 							<thead>
 								<tr>
 									<th>#</th>
@@ -88,7 +88,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 							<tbody id="views_courses">
 								
 							</tbody>
-						</table>
+						</table>-->
 					</div>
 				</div>
 			</div>
@@ -124,7 +124,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 								</fieldset>
 								<div class="row">
 									<div class="col-md-9 col-md-offset-3">
-										<button type="submit" class="btn btn-primary">Crear</button>
+										<button type="submit" class="btn btn-primary" id="data_send">Crear</button>
 										<button type="reset" class="btn btn-primary" id="cancelar-form">Cancelar</button>
 									</div>
 								</div>
@@ -162,7 +162,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<script src="/octopus/assets/javascripts/theme.init.js"></script>
 
 		<!-- Custom script -->
+		<script src="/octopus/roles/administrador/js/get_courses.js"></script>
 		 <script src="/octopus/roles/administrador/js/show_register_courses.js"></script>
-		 <script src="/octopus/roles/administrador/js/table.js"></script>
 </body>
 </html>

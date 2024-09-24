@@ -1,18 +1,36 @@
-document.querySelector("#cursos").addEventListener("click",consulta);
+$(document).ready(function(){
+	function queryAjax(){
+		$.ajax({
+			url:'/octopus/roles/administrador/php/table_model.php',
+			method: "POST",
+			success: function(response){
+				$("#table_async").html(response);
+			},
+			error:function(error){
+				console.log("Error en la conexión");
+			}
+		});
+	}
+	queryAjax();
 
-function consulta(){
-	const https = new XMLHttpRequest();
-	https.open("GET","/octopus/roles/administrador/php/query_courses.php",true);
-	https.send();
-	https.onreadystatechange = function(){
-		if(this.status==200 && this.readyState==4){
-			//let datos = JSON.parse(this.responseText);
+	$(document).on("click","#data_send",function(){
+		let name_course = $("#name_course").val();
+		let hours = $("#hours").val();
+		let description = $("#description").val();
 
-			localStorage.setItem("coursesData", JSON.stringify(this.responseText));
+		$.ajax({
+			url:'/octopus/roles/administrador/php/create_courses.php',
+			method: 'POST',
+			data: {name_course: name_course, 
+				hours: hours, 
+				description:description},
+			success: function(data){
+				console.log("Estamos dentro");
+			},
+			error: function(error){
+				console.log("Error de conexión");
+			}
+		});
 
-			window.location.href = "/octopus/roles/administrador/curses.php";
-			//console.log(this.responseText);
-		}
-	};
-
-}
+	});
+});
