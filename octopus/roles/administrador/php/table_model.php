@@ -30,8 +30,8 @@ while($row = $result->fetch_assoc()){
     <td> {$row['hours']}</td>
     <td> {$row['description']}</td>
     <td class='actions-hover'>
-        <a href=''><i class='fa fa-pencil'></i></a>
-        <a href='' class='delete-row'><i class='fa fa-trash-o'></i></a>
+        <a class='edit-course'><i class='fa fa-pencil'></i></a>
+        <a  class='delete-row'><i class='fa fa-trash-o'></i></a>
     <td>
     </tr>
     ";

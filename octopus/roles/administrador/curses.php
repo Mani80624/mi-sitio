@@ -46,7 +46,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<script src="/octopus/assets/vendor/modernizr/modernizr.js"></script>
 </head>
 <body>
-    <section class="body">
+    <section class="body" id="body">
 		<!-- start: header -->
 			<?php include 'includes_header.php'; ?> 
 		<!-- end: header -->
@@ -95,6 +95,7 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 			
 			<div class="row">
 				<button class="btn btn-primary" id="button-register">Crear nuevo curso</button>
+				<button class="btn btn-primary" id="button-hide">XD</button>
 		  </div>
 		  <div class="row mt-4" id="register-course">
 		  <div class="tabs">

@@ -21,7 +21,7 @@
 									</a>
 								</li>
 								<li>
-									<a href="mailbox-folder.html">
+									<a href="#">
 										<span class="pull-right label label-primary">182</span>
 										<i class="fa fa-envelope" aria-hidden="true"></i>
 										<span>Mensajes</span>
@@ -123,107 +123,107 @@
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="ui-elements-typography.html">
+											<a href="#">
 												 Typography
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-icons.html">
+											<a href="#">
 												 Icons
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-tabs.html">
+											<a href="#">
 												 Tabs
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-panels.html">
+											<a href="#">
 												 Panels
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-widgets.html">
+											<a href="#">
 												 Widgets
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-portlets.html">
+											<a href="#">
 												 Portlets
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-buttons.html">
+											<a href="#">
 												 Buttons
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-alerts.html">
+											<a href="#">
 												 Alerts
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-notifications.html">
+											<a href="#">
 												 Notifications
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-modals.html">
+											<a href="#">
 												 Modals
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-lightbox.html">
+											<a href="#">
 												 Lightbox
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-progressbars.html">
+											<a href="#">
 												 Progress Bars
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-sliders.html">
+											<a href="#">
 												 Sliders
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-carousels.html">
+											<a href="#">
 												 Carousels
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-accordions.html">
+											<a href="#">
 												 Accordions
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-nestable.html">
+											<a href="#">
 												 Nestable
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-tree-view.html">
+											<a href="#">
 												 Tree View
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-grid-system.html">
+											<a href="#">
 												 Grid System
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-charts.html">
+											<a href="#">
 												 Charts
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-animations.html">
+											<a href="#">
 												 Animations
 											</a>
 										</li>
 										<li>
-											<a href="ui-elements-extra.html">
+											<a href="#">
 												 Extra
 											</a>
 										</li>
@@ -236,32 +236,32 @@
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="forms-basic.html">
+											<a href="#">
 												 Basic
 											</a>
 										</li>
 										<li>
-											<a href="forms-advanced.html">
+											<a href="#">
 												 Advanced
 											</a>
 										</li>
 										<li>
-											<a href="forms-validation.html">
+											<a href="#">
 												 Validation
 											</a>
 										</li>
 										<li>
-											<a href="forms-layouts.html">
+											<a href="#">
 												 Layouts
 											</a>
 										</li>
 										<li>
-											<a href="forms-wizard.html">
+											<a href="#">
 												 Wizard
 											</a>
 										</li>
 										<li>
-											<a href="forms-code-editor.html">
+											<a href="#">
 												 Code Editor
 											</a>
 										</li>
@@ -274,32 +274,32 @@
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="tables-basic.html">
+											<a href="#">
 												 Basic
 											</a>
 										</li>
 										<li>
-											<a href="tables-advanced.html">
+											<a href="#">
 												 Advanced
 											</a>
 										</li>
 										<li>
-											<a href="tables-responsive.html">
+											<a href="#">
 												 Responsive
 											</a>
 										</li>
 										<li>
-											<a href="tables-editable.html">
+											<a href="#">
 												 Editable
 											</a>
 										</li>
 										<li>
-											<a href="tables-ajax.html">
+											<a href="#">
 												 Ajax
 											</a>
 										</li>
 										<li>
-											<a href="tables-pricing.html">
+											<a href="#">
 												 Pricing
 											</a>
 										</li>
@@ -312,17 +312,17 @@
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="maps-google-maps.html">
+											<a href="#">
 												 Basic
 											</a>
 										</li>
 										<li>
-											<a href="maps-google-maps-builder.html">
+											<a href="#">
 												 Map Builder
 											</a>
 										</li>
 										<li>
-											<a href="maps-vector.html">
+											<a href="#">
 												 Vector
 											</a>
 										</li>
@@ -335,22 +335,22 @@
 									</a>
 									<ul class="nav nav-children">
 										<li>
-											<a href="layouts-default.html">
+											<a href="#">
 												 Default
 											</a>
 										</li>
 										<li>
-											<a href="layouts-boxed.html">
+											<a href="#">
 												 Boxed
 											</a>
 										</li>
 										<li>
-											<a href="layouts-menu-collapsed.html">
+											<a href="#">
 												 Menu Collapsed
 											</a>
 										</li>
 										<li>
-											<a href="layouts-scroll.html">
+											<a href="#">
 												 Scroll
 											</a>
 										</li>

@@ -5,6 +5,8 @@ $(document).ready(function(){
     $("#cancelar-form").click(function(){
         $("#register-course").hide(500);
     });
+
+    
     $("#courses_form").validate({
         rules:{
             name_course:{
