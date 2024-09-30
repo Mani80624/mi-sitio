@@ -22,20 +22,26 @@ echo "
 	    </thead>
         <tbody>  
 ";
+$array_id_courses = array();
 while($row = $result->fetch_assoc()){
+
+    $array_id_courses[]=$row['id_course'];
+
     echo "
     <tr>
-    <td> {$row['id_course']}</td>
+    <td > {$row['id_course']}</td>
     <td> {$row['name_course']}</td>
     <td> {$row['hours']}</td>
     <td> {$row['description']}</td>
     <td class='actions-hover'>
-        <a class='edit-course'><i class='fa fa-pencil'></i></a>
-        <a  class='delete-row'><i class='fa fa-trash-o'></i></a>
+        <a class='edit' id='edit_{$row['id_course']}' ><i class='fa fa-pencil'></i></a>
+        <a class='trash' id='trash_{$row['id_course']}'><i class='fa fa-trash-o'></i></a>
     <td>
     </tr>
     ";
 }
+
 echo "</tbody>
 </table>";
+//echo json_encode($array_id_courses);
 ?>

@@ -46,99 +46,87 @@ if($_SESSION['name']==null || $_SESSION['name']==''){
 		<script src="/octopus/assets/vendor/modernizr/modernizr.js"></script>
 </head>
 <body>
-    <section class="body" id="body">
-		<!-- start: header -->
-			<?php include 'includes_header.php'; ?> 
-		<!-- end: header -->
-    <div class="inner-wrapper">
-        <?php include 'includes_bar_lat.php';?>
-        <section role="main" class="content-body">
-          <div class="row">
-
-		  	<!-- etiqueta de creación -->
-			 <div id="success">
-
-			 </div>
-
-
-            <div class="col-md-6">
-
-			</div>
-            <section class="panel">
-				<header class="panel-heading">
-					<div class="panel-actions">
-						<a href="#" class="fa fa-caret-down"></a>
-						<a href="#" class="fa fa-times"></a>
-					</div>
-						
-					<h2 class="panel-title">Mis cursos</h2>
-				</header>
-				<div class="panel-body">
-					<div id="table_async" class="table-responsive">
-						<!--<table class="table mb-none">
-							<thead>
-								<tr>
-									<th>#</th>
-									<th>Nombre del curso</th>
-									<th>Horas del curso</th>
-									<th>Descripción del curso</th>
-									<th>editar/borrar</th>
-								</tr>
-							</thead>
-							<tbody id="views_courses">
-								
-							</tbody>
-						</table>-->
-					</div>
+		<section class="body">
+			<!-- start: header -->
+				<?php include 'includes_header.php'; ?> 
+			<!-- end: header -->
+		<div class="inner-wrapper" id="body">
+			<?php include 'includes_bar_lat.php';?>
+			<section role="main" class="content-body">
+			  <div class="row">
+	
+				  <!-- etiqueta de creación -->
+				 <div id="success">
+	
+				 </div>
+	
+	
+				<div class="col-md-6">
+	
 				</div>
-			</div>
-			
-			<div class="row">
-				<button class="btn btn-primary" id="button-register">Crear nuevo curso</button>
-				<button class="btn btn-primary" id="button-hide">XD</button>
-		  </div>
-		  <div class="row mt-4" id="register-course">
-		  <div class="tabs">
-					<div class="tab-content">
-						<div class="tab">
-							<form id="courses_form" class="form horizontal">
-								<h4 class="mb-xlg">Nuevo curso</h4>
-								<fieldset>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Nombre del curso</label>
-										<div class="col-md-8">
-											<input type="text" name="name_course" id="name_course" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Horas del curso</label>
-										<div class="col-md-8">
-											<input type="number" name="hours" id="hours" class="form-control">
-										</div>
-									</div>
-									<div class="form-group">
-										<label class="col-md-3 control-label">Descripción de curso (no más de 250 carácteres)</label>
-										<div class="col-md-8">
-											<input type="text" name="description" id="description" class="form-control">
-										</div>
-									</div>
-								</fieldset>
-								<div class="row">
-									<div class="col-md-9 col-md-offset-3">
-										<button type="submit" class="btn btn-primary" id="data_send">Crear</button>
-										<button type="reset" class="btn btn-primary" id="cancelar-form">Cancelar</button>
-									</div>
-								</div>
-							</form>
+				<section class="panel">
+					<header class="panel-heading">
+						<div class="panel-actions">
+							<a href="#" class="fa fa-caret-down"></a>
+							<a href="#" class="fa fa-times"></a>
+						</div>
+							
+						<h2 class="panel-title">Mis cursos</h2>
+					</header>
+					<div class="panel-body">
+						<div id="table_async" class="table-responsive">
+	
 						</div>
 					</div>
 				</div>
+				
 
-		  </div>
-        </section>
-
-    </div> 
-    </section>
+				<div class="row">
+					<button class="btn btn-primary" id="button-register">Crear nuevo curso</button>
+			  </div>
+			  
+			  <div class="row mt-4" id="register-course">
+			  <div class="tabs">
+						<div class="tab-content">
+							<div class="tab">
+								<form id="courses_form" class="form horizontal">
+									<h4 class="mb-xlg">Nuevo curso</h4>
+									<fieldset>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Nombre del curso</label>
+											<div class="col-md-8">
+												<input type="text" name="name_course" id="name_course" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Horas del curso</label>
+											<div class="col-md-8">
+												<input type="number" name="hours" id="hours" class="form-control">
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-md-3 control-label">Descripción de curso (no más de 250 carácteres)</label>
+											<div class="col-md-8">
+												<input type="text" name="description" id="description" class="form-control">
+											</div>
+										</div>
+									</fieldset>
+									<div class="row">
+										<div class="col-md-9 col-md-offset-3">
+											<button type="submit" class="btn btn-primary" id="data_send">Crear</button>
+											<button type="reset" class="btn btn-primary" id="cancelar-form">Cancelar</button>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+	
+			  </div>
+			</section>
+	
+		</div> 
+		</section>
 		<!-- Vendor -->
 		<script src="/octopus/assets/vendor/jquery/jquery.js"></script>
 		<script src="/octopus/assets/vendor/jquery-browser-mobile/jquery.browser.mobile.js"></script>

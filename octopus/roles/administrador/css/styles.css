@@ -1,3 +1,11 @@
 #register-course{
 	display:none;
 }
+.container-blur{
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	display: flex;
+	border: 2px solid #fafafa10;
+	
+}
